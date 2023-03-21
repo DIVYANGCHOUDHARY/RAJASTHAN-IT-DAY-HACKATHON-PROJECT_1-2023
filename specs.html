@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>System Drivers</title>
+    <link rel="stylesheet" type="text/css" href={{ url_for('static', filename = 'specs.css') }}>
+</head>
+<body>
+    <h1>System Drivers</h1>
+    
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Path Name</th>
+            <th>State</th>
+            <th>Status</th>
+        </tr>
+        {% for driver in drivers %}
+        <tr>
+            <td>{{ driver['Name'] }}</td>
+            <td>{{ driver['Description'] }}</td>
+            <td>{{ driver['PathName'] }}</td>
+            <td>{{ driver['State'] }}</td>
+            <td>{{ driver['Status'] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

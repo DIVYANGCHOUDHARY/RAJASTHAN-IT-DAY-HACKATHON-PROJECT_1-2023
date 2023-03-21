@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href={{ url_for('static', filename = 'index.css') }}>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><h1>TechnoCrats</h1></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h2>Description</h2>
+            <p>
+                A WSGI (Web Server Gateway Interface) app is a web application that communicates with a web server using the WSGI protocol. In this case, we can create a WSGI app using Flask, a popular Python web framework. The purpose of this app is to list all drivers currently installed on a Windows machine using the win32com API and Flask.
+
+The win32com API is a Python module that provides access to the Microsoft Windows API functions. It can be used to interact with a wide range of Windows components and services, including drivers. We can use the win32com API to get a list of all the drivers currently installed on a Windows machine.
+            </p>
+
+            <a href="/specs"><button class = "btn">Click to fetch</button></a>
+        </div>
+    </main>
+</body>
+</html>
